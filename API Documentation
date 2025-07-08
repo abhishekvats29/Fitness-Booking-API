@@ -1,0 +1,156 @@
+# 📘 Fitness Booking API - Full API Documentation
+
+A RESTful backend application for a fictional fitness studio built using **FastAPI + SQLite**.  
+Clients can view available fitness classes (Yoga, Zumba, HIIT) and book slots.
+
+---
+
+## 🚀 Base URL
+
+http://localhost:8000
+
+> Use with Postman, Swagger (`/docs`), or `curl`.
+
+---
+
+## 📌 API Endpoints
+
+---
+
+### ✅ 1. `GET /classes`
+
+**Description**: Get all upcoming fitness classes.  
+**Supports timezone conversion** via the `timezone` query parameter.
+
+#### 🔹 Query Parameters
+
+| Name     | Type   | Default       | Description                          |
+|----------|--------|---------------|--------------------------------------|
+| timezone | string | Asia/Kolkata  | IANA timezone (e.g., America/New_York) |
+
+#### ✅ Example Request
+
+GET /classes?timezone=America/New_York
+
+#### ✅ Sample Response
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Yoga",
+    "instructor": "Alice",
+    "date_time": "2025-07-08T08:00:00-04:00",
+    "available_slots": 9
+  }
+]
+✅ 2. POST /book
+Description: Book a spot in a class using class ID, client name, and email.
+
+🔹 Request Body
+{
+  "class_id": 1,
+  "client_name": "John Doe",
+  "client_email": "john@example.com"
+}
+✅ Success Response
+{
+  "id": 1,
+  "class_id": 1,
+  "client_name": "John Doe",
+  "client_email": "john@example.com"
+}
+❌ Error Responses
+Code	Reason	Message
+404	Class not found	Class not found
+400	No available slots	No slots available
+422	Validation error	Missing/invalid fields
+
+✅ 3. GET /bookings
+Description: Retrieve all bookings made by a specific client email.
+
+🔹 Query Parameters
+Name	Type	Required	Description
+email	string	✅ Yes	Email address of the client
+
+✅ Example Request
+
+GET /bookings?email=john@example.com
+✅ Sample Response
+
+[
+  {
+    "id": 1,
+    "class_id": 1,
+    "client_name": "John Doe",
+    "client_email": "john@example.com"
+  }
+]
+⏰ Timezone Support
+All classes are stored in IST (Asia/Kolkata).
+
+Convert class times to any timezone using /classes?timezone=....
+
+Example: Europe/London, America/New_York, Asia/Tokyo.
+
+🧪 Testing
+Run all tests:
+
+pytest
+Test file:
+
+/tests/test_main.py
+
+Covers:
+
+Root route
+Get classes
+Book invalid class
+Bookings by email
+
+## 📂 Project Structure
+
+fitness-booking-api/
+├── app/
+│   ├── main.py              # Main FastAPI app
+│   ├── db.py                # SQLite + SQLAlchemy setup
+│   ├── models.py            # Pydantic and DB models
+│   ├── utils.py             # Timezone conversion helper
+│   ├── seed.py              # Seed class data
+│   ├── fitness.db           # ✅ SQLite database (auto-created)
+│   └── __init__.py          # Required for Python packages
+├── tests/
+│   └── test_main.py         # API tests using pytest
+├── Dockerfile               # Docker setup
+├── requirements.txt         # Python dependencies
+├── README.md                # Setup + usage instructions
+├── API Documentation     # ✅ Full API reference
+
+You can interact with the API via:
+
+Swagger UI: http://localhost:8000/docs
+
+ReDoc: http://localhost:8000/redoc
+
+## ✅ Features Summary
+
+🧘 View and book fitness classes
+
+🌐 Timezone-aware class times
+
+🧪 Fully tested with pytest
+
+❌ Handles edge cases (invalid ID, overbooking)
+
+🚫 CORS enabled for frontend integration
+
+💾 SQLite in-memory DB (no setup needed)
+
+⚙️ Auto-load seed data on startup
+
+# 🧑‍💻 Developer Info
+
+Author: Abhishek Vats
+Role: Python Developer Assignment – Fullstack API
+Date: July 2025
+Submission: Includes code, tests, API docs, and Loom video
