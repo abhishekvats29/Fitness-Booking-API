@@ -2,21 +2,15 @@
 
 A RESTful backend application for a fictional fitness studio built using **FastAPI + SQLite**.  
 Clients can view available fitness classes (Yoga, Zumba, HIIT) and book slots.
-
 ---
-
 ## 🚀 Base URL
 
 http://localhost:8000
 
 > Use with Postman, Swagger (`/docs`), or `curl`.
-
 ---
-
 ## 📌 API Endpoints
-
 ---
-
 ### ✅ 1. `GET /classes`
 
 **Description**: Get all upcoming fitness classes.  
@@ -135,17 +129,11 @@ ReDoc: http://localhost:8000/redoc
 ## ✅ Features Summary
 
 🧘 View and book fitness classes
-
 🌐 Timezone-aware class times
-
 🧪 Fully tested with pytest
-
 ❌ Handles edge cases (invalid ID, overbooking)
-
 🚫 CORS enabled for frontend integration
-
 💾 SQLite in-memory DB (no setup needed)
-
 ⚙️ Auto-load seed data on startup
 
 # 🧑‍💻 Developer Info
