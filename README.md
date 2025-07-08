@@ -63,21 +63,3 @@ ReDoc: http://localhost:8000/redoc
 
 pytest
 
-
-
-## 📄 API Documentation
-A complete breakdown of all endpoints, request/response formats, query parameters, and error codes is available here:
-
-📘 API documentation
-
-🎥 Loom Walkthrough
-🎬 Watch Demo Video: Click here to view Loom demo
-
-(Replace with your Loom recording link)
-
-## 🧑‍💻 Developer Info
-
-Author: Abhishek Vats
-Role: Python Developer – Fullstack API Assignment
-Date: July 2025
-Submission: Code, Dockerfile, Tests, Docs, Loom Video
