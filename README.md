@@ -38,22 +38,30 @@ A lightweight, timezone-aware booking API for a fictional fitness studio. Built 
 ---
 
 ## ⚙️ Setup Instructions
-
 ### 🐍 Create Virtual Environment
 
-```bash
-python -m venv venv
+## Visit in browser:
 
-# Activate:
-source venv/bin/activate        # macOS/Linux
-.\venv\Scripts\activate         # Windows
+Swagger UI: http://localhost:8000/docs
 
-## Install Dependencies
+ReDoc: http://localhost:8000/redoc
 
-pip install -r requirements.txt
+## Running Tests
+
+pytest
 
 
-## ▶️ Run Locally
+## 📄 API Documentation
+A complete breakdown of all endpoints, request/response formats, query parameters, and error codes is available here:
 
-uvicorn main:app --reload
----
+## 🧑‍💻 Developer Info
+
+Author: Abhishek Vats
+Role: Python Developer – Booking API Assignment
+Date: July 2025
+Submission: Code, Dockerfile, Tests, Docs, Loom Video
+
+## 📝 License
+
+This project is Developed as a part of a FullStack API Assignmnet.
+
