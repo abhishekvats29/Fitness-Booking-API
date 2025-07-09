@@ -21,7 +21,7 @@ A lightweight, timezone-aware booking API for a fictional fitness studio. Built 
 https://github.com/user-attachments/assets/f26605d0-4d0d-4922-848c-b73196630685
 
 #### ✅ Sample API Response (POST /book-class)
-![Booking response](screenshots/post-booking-success.png)
+<img src="https://github.com/user-attachments/assets/f26605d0-4d0d-4922-848c-b73196630685" alt="Swagger Docs Screenshot" style="width: 100%; display: block; margin: auto;" />
 
 ---
 ## 🚀 Features
