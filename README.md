@@ -1,4 +1,4 @@
-# 🏋️ Fitness Booking API – FastAPI Project
+# 🏋️ Fitness Booking API
 
 A lightweight, timezone-aware booking API for a fictional fitness studio. Built using **FastAPI**, **SQLite**, and **SQLAlchemy**. Supports class listing, booking, and booking history retrieval with a simple and modular design.
 
@@ -11,6 +11,18 @@ A lightweight, timezone-aware booking API for a fictional fitness studio. Built 
 👉 **Swagger Docs**:  Click here to view Live Docs
 [https://fitness-booking-api.onrender.com/docs]
 
+👉 **Redoc UI Page**:  Click here to view Live ReDocs
+[https://fitness-booking-api.onrender.com/redoc]
+
+---
+### 📸 Screenshots
+
+#### ✅ Live API Documentation (Swagger UI)
+![Swagger Docs](screenshots/swagger-docs.png)
+
+#### ✅ Sample API Response (POST /book-class)
+![Booking response](screenshots/post-booking-success.png)
+
 ---
 ## 🚀 Features
 
@@ -22,14 +34,6 @@ A lightweight, timezone-aware booking API for a fictional fitness studio. Built 
 - 📄 Auto-generated API docs via Swagger & ReDoc
 - 🧪 Tested using pytest
 - 🐳 Docker-ready deployment
-
----
-
-## 🖼️ Screenshot
-
-![Fitness Booking API Docs](screenshots/swagger-ui.png)
-
-> (Replace the above with a real screenshot from Swagger UI)
 
 ---
 
