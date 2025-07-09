@@ -36,9 +36,32 @@ A lightweight, timezone-aware booking API for a fictional fitness studio. Built 
 - 🐳 Docker-ready deployment
 
 ---
+## 🛠️ Tech Stack
 
+- ⚙️ **Backend**: FastAPI (Python)
+- 🐳 **Deployment**: Render (Docker)
+- 📨 **Email Validation**: Pydantic + email-validator
+- 📄 **API Docs**: Swagger UI (FastAPI default)
+- 💾 **Database**: SQLite
+- 🧪 **Testing Tool**: Swagger UI / Postman (optional)
+  
+---
 ## ⚙️ Setup Instructions
-### 🐍 Create Virtual Environment
+### Create Virtual Environment
+bash
+python -m venu venu
+
+### Activate
+source venv/bin/activate
+.\venv\Scripts\activate
+
+### Install Dependencies
+pip install -r requirements.txt
+
+### Run locally
+uvicorn app.main:app --reload
+
+---
 
 ## Visit in browser:
 
