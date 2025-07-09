@@ -79,10 +79,10 @@ A complete breakdown of all endpoints, request/response formats, query parameter
 
 ## 🧑‍💻 Developer Info
 
-Author: Abhishek Vats
-Role: Python Developer – Booking API Assignment
-Date: July 2025
-Submission: Code, Dockerfile, Tests, Docs, Loom Video
+- Author: Abhishek Vats
+- Role: Python Developer – Booking API Assignment
+- Date: July 2025
+- Submission: Code, Dockerfile, Tests, Docs, Loom Video
 
 ## 📝 License
 
