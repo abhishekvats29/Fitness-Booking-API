@@ -5,3 +5,4 @@ pydantic
 pytz ; python_version < "3.9"
 pytest
 httpx
+email-validator
