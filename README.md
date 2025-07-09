@@ -18,7 +18,7 @@ A lightweight, timezone-aware booking API for a fictional fitness studio. Built 
 ### 📸 Screenshots
 
 #### ✅ Live API Documentation (Swagger UI)
-https://github.com/user-attachments/assets/f26605d0-4d0d-4922-848c-b73196630685
+<img width="1920" height="971" alt="Image" src="https://github.com/user-attachments/assets/83b80ad6-cbb9-4c59-aa40-da0b7b79e8a0" />
 
 #### ✅ Sample API Response (POST /book-class)
 <img src="https://github.com/user-attachments/assets/f26605d0-4d0d-4922-848c-b73196630685" alt="Swagger Docs Screenshot" style="width: 100%; display: block; margin: auto;" />
@@ -56,29 +56,4 @@ pip install -r requirements.txt
 ## ▶️ Run Locally
 
 uvicorn main:app --reload
-
-## Visit in browser:
-
-Swagger UI: http://localhost:8000/docs
-
-ReDoc: http://localhost:8000/redoc
-
-## Running Tests
-
-pytest
-
-
-## 📄 API Documentation
-A complete breakdown of all endpoints, request/response formats, query parameters, and error codes is available here:
-
-🎥 Loom Walkthrough
-🎬 Watch Demo Video: Click here to view Loom demo
-
-(Replace with your Loom recording link)
-
-## 🧑‍💻 Developer Info
-
-Author: Abhishek Vats
-Role: Python Developer – Fullstack API Assignment
-Date: July 2025
-Submission: Code, Dockerfile, Tests, Docs, Loom Video
+---
