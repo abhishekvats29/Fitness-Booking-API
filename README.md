@@ -1,4 +1,4 @@
-# 🏋️ Fitness Booking API
+# Fitness Booking API
 
 A lightweight, timezone-aware booking API for a fictional fitness studio. Built using **FastAPI**, **SQLite**, and **SQLAlchemy**. Supports class listing, booking, and booking history retrieval with a simple and modular design.
 
@@ -15,16 +15,16 @@ A lightweight, timezone-aware booking API for a fictional fitness studio. Built 
 [https://fitness-booking-api.onrender.com/redoc]
 
 ---
-### 📸 Screenshots
+### Screenshots
 
-#### ✅ Live API Documentation (Swagger UI)
+#### Live API Documentation (Swagger UI)
 <img width="1920" height="971" alt="Image" src="https://github.com/user-attachments/assets/83b80ad6-cbb9-4c59-aa40-da0b7b79e8a0" />
 
-#### ✅ Sample API Response (POST /book-class)
+#### Sample API Response (POST /book-class)
 <img width="1137" height="706" alt="Image" src="https://github.com/user-attachments/assets/4068db56-2236-4821-9a85-b99ab3943cdd" />
 
 ---
-## 🚀 Features
+## Features
 
 - 🧘 View available fitness classes (Yoga, Zumba, HIIT)
 - 🕒 Timezone-aware scheduling (default: Asia/Kolkata)
@@ -36,7 +36,7 @@ A lightweight, timezone-aware booking API for a fictional fitness studio. Built 
 - 🐳 Docker-ready deployment
 
 ---
-## 🛠️ Tech Stack
+## Tech Stack
 
 - ⚙️ **Backend**: FastAPI (Python)
 - 🐳 **Deployment**: Render (Docker)
